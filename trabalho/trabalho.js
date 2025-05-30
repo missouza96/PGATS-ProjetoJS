@@ -1,6 +1,8 @@
 
+
+
 export function geradorDeTagsDeIdentificacao(nome) {
-    return nome.toUpperCase();
+    return nome.toUpperCase(); 
 }
 
 export function verificarSePodeSerAdotado(idade, porte) {
@@ -14,10 +16,10 @@ export function calcularConsumoDeRacao(nome, idade, peso) {
 }
 
 export function decidirTipoDeAtividadePorPorte(porte) {
-    if (porte === 'pequeno') return 'brincar dentro de casa';
-    if (porte === 'médio') return 'passeios moderados';
-    if (porte === 'grande') return 'exercícios ao ar livre';
-    return 'atividade desconhecida';
+    if (porte === 'pequeno') {
+        return 'brincar dentro de casa';
+    }
+    return 'livre pra praticar atividades fora de casa';
 }
 
 export async function buscarDadoAsync() {
